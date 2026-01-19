@@ -10,28 +10,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {},
-          },
-        },
-      };
-    </script>
   </head>
   <body class="bg-[#1A0B2E] text-white border-b border-b-gray-700">
     <!-- HEADER SECTION  -->
     <header
-      class="px-[12.5%] py-6 max-w-[1600px] flex items-center justify-around border-b border-gray-700"
+      class="px-[200px] max-xl:px-[100px] max-lg:px-16 max-sm:px-2 mx-auto py-6 max-sm:py-4 max-w-[1600px] flex items-center justify-around border-b border-gray-700"
     >
-      <h1 class="font-bold text-5xl textdan">
+      <h1
+        class="font-bold max-sm:font-semibold text-5xl max-lg:text-4xl max-sm:text-2xl"
+      >
         Tech<span
           class="bg-linear-to-bl from-violet-600 from-30% to-yellow-300 to-95% via-pink-600 via-60% bg-clip-text text-transparent"
           >Wave</span
         >
       </h1>
-      <ul class="flex items-center justify-around gap-8">
+      <ul class="flex items-center justify-around gap-8 max-sm:gap-1.5">
         <li>
           <a
             href="#"
@@ -56,15 +49,14 @@
       </ul>
       <button
         type="button"
-        class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-semibold text-base text-center capitalize rounded-full py-3 px-4"
+        class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-normal text-base text-center capitalize rounded-full py-3 max-sm:py-1.5 px-4 max-sm:px-2"
       >
         subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
     </header>
-
     <!-- HERO SECTION -->
     <section
-      class="bg-[url(./assets/hero-bg.png)] py-[100px] flex items-center justify-around flex-col gap-10"
+      class="bg-[url(./assets/hero-bg.png)] bg-center px-[200px] mx-auto max-w-[1600px] bg-no-repeat py-[100px] flex items-center justify-around flex-col gap-10"
     >
       <!-- Part one  -->
       <div class="flex items-center justify-center relative">
@@ -114,7 +106,7 @@
     <main class="w-full">
       <!-- ABOUT SECTION -->
       <section
-        class="pt-12 pb-[120px] gap-20 px-[200px] flex flex-col justify-between items-center"
+        class="pt-12 pb-[120px] gap-20 px-[200px] max-xl:px-[100px] flex flex-col justify-between items-center"
       >
         <div>
           <h2 class="text-center text-5xl font-bold mb-5">About the Podcast</h2>
@@ -134,34 +126,34 @@
           </div>
         </div>
         <hr class="border-gray-700 w-full" />
-        <div class="flex items-center justify-around gap-20">
-          <div>
+        <div class="flex items-center justify-around gap-20 max-xl:gap-10">
+          <div class="border">
             <h3
-              class="text-5xl font-black text-green-600 pb-5 px-16 text-center"
+              class="text-5xl max-xl:text-4xl font-black text-green-600 pb-5 text-center"
             >
               1500K+
             </h3>
             <p class="text-center">Monthly Listeners</p>
           </div>
-          <div>
+          <div class="border">
             <h3
-              class="text-5xl font-black text-green-600 pb-5 px-16 text-center"
+              class="text-5xl max-xl:text-4xl font-black text-green-600 pb-5 text-center"
             >
               200+
             </h3>
             <p class="text-center">Episodes Published</p>
           </div>
-          <div>
+          <div class="border">
             <h3
-              class="text-5xl font-black text-green-600 px-0 pb-5 text-center"
+              class="text-5xl max-xl:text-4xl font-black text-green-600 px-0 pb-5 text-center"
             >
-              4.9 <i class="fa-solid fa-star text-4xl"></i>
+              4.9<i class="fa-solid fa-star text-4xl max-xl:text-2xl"></i>
             </h3>
             <p class="text-center">Average Rating</p>
           </div>
-          <div>
+          <div class="border">
             <h3
-              class="text-5xl font-black text-green-600 px-16 pb-5 text-center"
+              class="text-5xl max-xl:text-4xl font-black text-green-600 pb-5 text-center"
             >
               50+
             </h3>
@@ -171,12 +163,16 @@
       </section>
 
       <!-- FEATURES SECTION -->
-      <section class="bg-[#230E3D] w-full py-[120px] px-[200px]">
+      <section
+        class="bg-[#230E3D] w-full py-[120px] px-[200px] max-xl:px-[100px]"
+      >
         <h2 class="text-center font-bold text-5xl mb-10">Why Chose TechWave</h2>
 
-        <div class="grid-cols-3 grid-rows-3 grid gap-[30px]">
+        <div
+          class="grid-cols-3 grid-rows-3 max-lg:grid-cols-2 max-lg:grid-rows-2 grid gap-[30px] max-xl:gap-5"
+        >
           <div
-            class="row-span-2 col-span-1 p-10 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
+            class="row-span-2 col-span-1 max-lg:row-span-1 max-lg:col-span-2 px-10 py-5 max-xl:px-6 max-xl:py-2.5 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
           >
             <img
               src="./assets/headphone.png"
@@ -192,7 +188,7 @@
             </p>
           </div>
           <div
-            class="col-span-2 row-span-1 p-10 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
+            class="col-span-2 row-span-1 max-lg:col-span-1 px-10 py-5 max-xl:px-6 max-xl:py-2.5 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
           >
             <img
               src="./assets/device.png"
@@ -207,7 +203,7 @@
             </p>
           </div>
           <div
-            class="col-span-2 row-span-1 p-10 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
+            class="col-span-2 row-span-1 max-lg:col-span-1 max-lg:row-span-1 px-10 py-5 max-xl:px-6 max-xl:py-2.5 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
           >
             <img
               src="./assets/location.png"
@@ -221,7 +217,7 @@
             </p>
           </div>
           <div
-            class="col-span-2 row-span-1 p-10 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
+            class="col-span-2 row-span-1 max-lg:col-span-1 px-10 py-5 max-xl:px-6 max-xl:py-2.5 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
           >
             <img
               src="./assets/exclusiveIcon.png"
@@ -238,7 +234,7 @@
             </p>
           </div>
           <div
-            class="row-span-1 col-span-1 p-10 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
+            class="row-span-1 col-span-1 px-10 py-5 max-xl:px-6 max-xl:py-2.5 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
           >
             <img
               src="./assets/resource.png"
@@ -256,14 +252,16 @@
       </section>
 
       <!-- EPISODES SECTION -->
-      <section class="w-full py-[120px] px-[200px]">
+      <section class="w-full py-[120px] px-[200px] max-xl:px-[100px]">
         <h2 class="font-bold text-5xl text-center capitalize mb-10">
           Featured Episodes
         </h2>
-        <div class="flex items-center justify-between gap-6">
+        <div
+          class="flex items-center justify-between gap-6 max-lg:flex-col max-lg:px-10"
+        >
           <div class="bg-[#35116562] rounded-2xl">
             <iframe
-              class="w-full max-h-56 rounded-t-2xl"
+              class="w-full max-h-56 max-lg:h-96 rounded-t-2xl"
               src="https://www.youtube.com/embed/muBBYZXYgoM?si=dIYztfGo0lNTIWnJ"
               title="YouTube video player"
               frameborder="0"
@@ -297,7 +295,7 @@
 
           <div class="bg-[#35116562] rounded-2xl">
             <iframe
-              class="w-full max-h-56 rounded-t-2xl"
+              class="w-full max-h-56 max-lg:h-96 rounded-t-2xl"
               src="https://www.youtube.com/embed/FfQUHfjB7e8?si=Uz6t10wlIzNaT8Bc"
               title="YouTube video player"
               frameborder="0"
@@ -330,7 +328,7 @@
 
           <div class="bg-[#35116562] rounded-2xl">
             <iframe
-              class="w-full max-h-56 rounded-t-2xl"
+              class="w-full max-h-56 max-lg:h-96 rounded-t-2xl"
               src="https://www.youtube.com/embed/faxoBJdsfMc?si=Tj79IdIGUHO3CKhK"
               title="YouTube video player"
               frameborder="0"
@@ -367,7 +365,7 @@
       </section>
 
       <!-- HOST SECTION -->
-      <section class="w-full pb-[120px] px-[200px] pt-0">
+      <section class="w-full pb-[120px] px-[200px] max-xl:px-[100px] pt-0">
         <h2 class="font-bold text-5xl text-center capitalize mb-10">
           meet the host
         </h2>
