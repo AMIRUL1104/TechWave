@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#1A0B2E] text-white border-b border-b-gray-700">
+    <header
+      class="px-[12.5%] py-6 bg-[] max-w-[1600px] flex items-center justify-around"
+    >
+      <h1 class="font-bold text-5xl">
+        Tech<span
+          class="bg-linear-to-bl from-violet-600 from-30% to-yellow-300 to-95% via-pink-600 via-60% bg-clip-text text-transparent"
+          >Wave</span
+        >
+      </h1>
+      <ul class="flex items-center justify-around gap-8">
+        <li><a href="#" class="font-medium">About</a></li>
+        <li><a href="#" class="font-medium">Episodes</a></li>
+        <li><a href="#" class="font-medium">Host</a></li>
+      </ul>
+      <button
+        type="button"
+        class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-semibold text-base text-center capitalize rounded-full py-3 px-4"
+      >
+        subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </header>
+
+    <section
+      class="bg-[url(./assets/hero-bg.png)] flex items-center justify-around flex-col gap-10"
+    >
+      <div class="flex items-center justify-center relative">
+        <img
+          src="./assets/hero-circle.png"
+          alt="image"
+          srcset=""
+          class="max-w-[350px] mt-[100px]"
+        />
+        <img
+          src="./assets/microphone.png"
+          alt="image"
+          srcset=""
+          class="absolute bottom-20"
+        />
+      </div>
+      <div class="flex items-center justify-around flex-col gap-8">
+        <h2 class="text-6xl font-extrabold text-center">TechWave</h2>
+        <p class="text-base">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+        <div class="flex gap-2">
+          <button
+            class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-semibold text-base text-center capitalize rounded-full py-3 px-4"
+          >
+            <i class="fa-brands fa-spotify"></i>
+            listen to spotify
+          </button>
+          <button
+            class="border rounded-full text-green-500 border-green-500 font-semibold text-center text-base capitalize py-3 px-4"
+          >
+            <i class="fa-regular fa-envelope"></i>
+            subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
