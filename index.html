@@ -12,8 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#1A0B2E] text-white border-b border-b-gray-700">
+    <!-- HEADER SECTION  -->
     <header
-      class="px-[12.5%] py-6 bg-[] max-w-[1600px] flex items-center justify-around"
+      class="px-[12.5%] py-6 max-w-[1600px] flex items-center justify-around border-b border-gray-700"
     >
       <h1 class="font-bold text-5xl">
         Tech<span
@@ -34,15 +35,16 @@
       </button>
     </header>
 
+    <!-- HERO SECTION -->
     <section
-      class="bg-[url(./assets/hero-bg.png)] flex items-center justify-around flex-col gap-10"
+      class="bg-[url(./assets/hero-bg.png)] py-[100px] flex items-center justify-around flex-col gap-10"
     >
       <div class="flex items-center justify-center relative">
         <img
           src="./assets/hero-circle.png"
           alt="image"
           srcset=""
-          class="max-w-[350px] mt-[100px]"
+          class="max-w-[350px]"
         />
         <img
           src="./assets/microphone.png"
@@ -61,7 +63,7 @@
           <button
             class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-semibold text-base text-center capitalize rounded-full py-3 px-4"
           >
-            <i class="fa-brands fa-spotify"></i>
+            <i class="fa-brands fa-spotify text-2xl"></i>
             listen to spotify
           </button>
           <button
@@ -73,5 +75,74 @@
         </div>
       </div>
     </section>
+
+    <!-- MAIN SECTION -->
+    <main class="w-full px-[200px]">
+      <!-- ABOUT SECTION -->
+      <section class="py-12 gap-20 flex flex-col justify-between items-center">
+        <div>
+          <h2 class="text-center text-5xl font-bold mb-5">About the Podcast</h2>
+          <div class="flex items-center justify-between flex-col">
+            <p class="text-center leading-7">
+              TechWave is your go-to podcast for staying ahead in the fast-paced
+              world of technology. <br />
+              We break down complex topics into digestible insights, explore
+              productivity strategies that actually work, <br />
+              and share stories of personal growth from industry leaders.
+            </p>
+            <br />
+            <p class="text-center">
+              Join thousands of young professionals and tech enthusiasts who
+              start their day with TechWave.
+            </p>
+          </div>
+        </div>
+        <hr class="border-gray-700 w-full" />
+        <div class="flex items-center justify-around gap-20">
+          <div class="border">
+            <h3
+              class="text-5xl font-black text-green-600 pb-5 px-16 text-center"
+            >
+              1500K+
+            </h3>
+            <p class="text-center">Monthly Listeners</p>
+          </div>
+          <div>
+            <h3
+              class="text-5xl font-black text-green-600 pb-5 px-16 text-center"
+            >
+              200+
+            </h3>
+            <p class="text-center">Episodes Published</p>
+          </div>
+          <div>
+            <h3
+              class="text-5xl font-black text-green-600 px-0 pb-5 text-center"
+            >
+              4.9 <i class="fa-solid fa-star text-4xl"></i>
+            </h3>
+            <p class="text-center">Average Rating</p>
+          </div>
+          <div>
+            <h3
+              class="text-5xl font-black text-green-600 px-16 pb-5 text-center"
+            >
+              50+
+            </h3>
+            <p class="text-center">Industry Experts</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES SECTION -->
+      <section></section>
+      <!-- EPISODES SECTION -->
+      <section></section>
+      <!-- HOST SECTION -->
+      <section></section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="h-52 border"></footer>
   </body>
 </html>
