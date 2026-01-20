@@ -11,92 +11,110 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#1A0B2E] text-white border-b border-b-gray-700">
+  <body class="bg-[#1A0B2E] text-white border-b border-b-gray-700 p-0 m-0">
     <!-- HEADER SECTION  -->
     <header
-      class="px-[200px] max-xl:px-[100px] max-lg:px-16 max-sm:px-2 mx-auto py-6 max-sm:py-4 max-w-[1600px] flex items-center justify-around border-b border-gray-700"
+      class="max-sm:justify-between px-[200px] max-xl:px-[100px] max-lg:px-5 mx-auto py-6 max-sm:py-4 max-w-[1600px] flex items-center justify-around border-b border-gray-700"
     >
       <h1
-        class="font-bold max-sm:font-semibold text-5xl max-lg:text-4xl max-sm:text-2xl"
+        class="font-bold max-sm:font-semibold text-5xl max-lg:text-3xl max-sm:text-2xl"
       >
         Tech<span
           class="bg-linear-to-bl from-violet-600 from-30% to-yellow-300 to-95% via-pink-600 via-60% bg-clip-text text-transparent"
           >Wave</span
         >
       </h1>
-      <ul class="flex items-center justify-around gap-8 max-sm:gap-1.5">
-        <li>
-          <a
-            href="#"
-            class="font-mediumb transition duration-500 hover:border-b hover:text-lg pb-0.5"
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="font-medium hover:border-b transition duration-500 hover:text-lg pb-0.5"
-            >Episodes</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="font-medium hover:border-b hover:text-lg pb-0.5 transition duration-500"
-            >Host</a
-          >
-        </li>
-      </ul>
+
+      <nav class="group relative">
+        <ul
+          class="max-sm:absolute max-sm:-left-16 max-sm:mt-10 max-sm:w-20 max-sm:invisible max-sm:opacity-0 z-20 max-sm:py-3.5 max-sm:bg-[#1A0B2E] max-sm:border rounded-xl max-sm:*:space-y-3 group-focus::opacity-100 group-hover:visible transition-all duration-200 flex items-center justify-around gap-8 max-sm:gap-1.5 max-sm:flex-col"
+        >
+          <li>
+            <a
+              href="#"
+              class="font-mediumb transition duration-500 hover:border-b hover:text-lg pb-0.5"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium hover:border-b transition duration-500 hover:text-lg pb-0.5"
+              >Episodes</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium hover:border-b hover:text-lg pb-0.5 transition duration-500"
+              >Host</a
+            >
+          </li>
+        </ul>
+        <button class="sm:hidden">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+      </nav>
       <button
         type="button"
-        class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-normal text-base text-center capitalize rounded-full py-3 max-sm:py-1.5 px-4 max-sm:px-2"
+        class="max-sm:hidden bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-normal text-base text-center capitalize rounded-full py-3 max-lg:py-1.5 px-4 max-lg:px-2"
       >
         subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
     </header>
+
     <!-- HERO SECTION -->
     <section
-      class="bg-[url(./assets/hero-bg.png)] bg-center px-[200px] mx-auto max-w-[1600px] bg-no-repeat py-[100px] flex items-center justify-around flex-col gap-10"
+      class="relative bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-center bg-contain lg:bg-cover max-w-[1600px] mx-auto px-6 lg:px-16 pt-24 lg:pt-32"
     >
-      <!-- Part one  -->
-      <div class="flex items-center justify-center relative">
-        <p
-          class="absolute top-3 right-5 text-lg font-semibold rounded-4xl bg-green-500 text-black py-2 px-4 text-center drop-shadow-xl/50 drop-shadow-green-500"
-        >
-          NEW
-        </p>
-        <img
-          src="./assets/hero-circle.png"
-          alt="image"
-          srcset=""
-          class="max-w-[350px]"
-        />
-        <img
-          src="./assets/microphone.png"
-          alt="image"
-          srcset=""
-          class="absolute bottom-20"
-        />
-      </div>
-      <!-- Part two -->
-      <div class="flex items-center justify-around flex-col gap-8">
-        <h2 class="text-6xl font-extrabold text-center">TechWave</h2>
-        <p class="text-base">
-          Your daily dose of tech insights, productivity hacks, and personal
-          growth
-        </p>
-        <div class="flex gap-2">
-          <button
-            class="bg-linear-to-bl from-violet-600 from-20% to-yellow-300 to-90% via-pink-600 via-50% text-white font-semibold text-base text-center capitalize rounded-full py-3 px-4"
+      <div
+        class="flex flex-col items-center text-center max-w-[600px] mx-auto gap-10"
+      >
+        <!-- Image -->
+        <div class="flex justify-center relative">
+          <p
+            class="absolute top-3 right-5 text-lg max-xl:top-0 max-xl:right-5 max-lg:right-0 max-sm:right-0 max-xl:text-lg font-semibold rounded-4xl bg-green-500 text-black py-2 px-4 max-xl:py-1 max-xl:px-3 text-center drop-shadow-xl/50 drop-shadow-green-500"
           >
-            <i class="fa-brands fa-spotify text-2xl animate-bounce"></i>
-            listen to spotify
-          </button>
+            NEW
+          </p>
+          <img
+            src="./assets/hero-circle.png"
+            alt="Hero image"
+            class="w-[220px] sm:w-[260px] lg:w-[320px]"
+          />
+          <img
+            src="./assets/microphone.png"
+            alt="image"
+            srcset=""
+            class="absolute bottom-20 max-lg:max-w-20 max-sm:bottom-10"
+          />
+        </div>
+
+        <!-- Text Content -->
+        <div class="flex flex-col gap-6">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+            TechWave
+          </h2>
+
+          <p class="text-sm sm:text-base opacity-80 max-w-[480px] mx-auto">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+        </div>
+
+        <div class="flex gap-4">
           <button
-            class="border rounded-full text-green-500 border-green-500 font-semibold text-center text-base capitalize py-3 px-4"
+            class="flex items-center gap-2 bg-linear-to-bl from-violet-600 via-pink-600 to-yellow-300 text-white font-semibold rounded-full py-3 px-6 transition hover:scale-105"
+          >
+            <i class="fa-brands fa-spotify text-xl"></i>
+            Listen on Spotify
+          </button>
+
+          <button
+            class="flex items-center gap-2 border border-green-500 text-green-500 font-semibold rounded-full py-3 px-6 transition hover:bg-green-500 hover:text-white"
           >
             <i class="fa-regular fa-envelope"></i>
-            subscribe
+            Subscribe
           </button>
         </div>
       </div>
@@ -106,17 +124,21 @@
     <main class="w-full">
       <!-- ABOUT SECTION -->
       <section
-        class="pt-12 pb-[120px] gap-20 px-[200px] max-xl:px-[100px] flex flex-col justify-between items-center"
+        class="pt-12 pb-[120px] gap-20 px-[200px] max-xl:px-[100px] max-md:px-5 flex flex-col justify-between items-center"
       >
-        <div>
-          <h2 class="text-center text-5xl font-bold mb-5">About the Podcast</h2>
+        <!-- Part one  -->
+        <div class="max-w-[800px]">
+          <h2
+            class="text-center text-5xl font-bold max-sm:font-medium mb-5 max-sm:text-3xl"
+          >
+            About the Podcast
+          </h2>
           <div class="flex items-center justify-between flex-col">
-            <p class="text-center leading-7">
+            <p class="text-center leading-7 opacity-80">
               TechWave is your go-to podcast for staying ahead in the fast-paced
-              world of technology. <br />
-              We break down complex topics into digestible insights, explore
-              productivity strategies that actually work, <br />
-              and share stories of personal growth from industry leaders.
+              world of technology. We break down complex topics into digestible
+              insights, explore productivity strategies that actually work, and
+              share stories of personal growth from industry leaders.
             </p>
             <br />
             <p class="text-center">
@@ -126,50 +148,55 @@
           </div>
         </div>
         <hr class="border-gray-700 w-full" />
-        <div class="flex items-center justify-around gap-20 max-xl:gap-10">
-          <div class="border">
+        <!-- Part two -->
+        <div
+          class="flex items-center justify-around gap-20 max-lg:grid max-sm:flex-col max-lg:grid-cols-2 max-lg:grid-rows-1 max-xl:gap-10 max-lg:w-full"
+        >
+          <div class="max-lg:col-span-1 max-lg:row-span-1">
             <h3
               class="text-5xl max-xl:text-4xl font-black text-green-600 pb-5 text-center"
             >
               1500K+
             </h3>
-            <p class="text-center">Monthly Listeners</p>
+            <p class="text-center opacity-80">Monthly Listeners</p>
           </div>
-          <div class="border">
+          <div class="max-lg:col-span-1 max-lg:row-span-1">
             <h3
               class="text-5xl max-xl:text-4xl font-black text-green-600 pb-5 text-center"
             >
               200+
             </h3>
-            <p class="text-center">Episodes Published</p>
+            <p class="text-center opacity-80">Episodes Published</p>
           </div>
-          <div class="border">
+          <div class="max-lg:col-span-1 max-lg:row-span-1">
             <h3
               class="text-5xl max-xl:text-4xl font-black text-green-600 px-0 pb-5 text-center"
             >
               4.9<i class="fa-solid fa-star text-4xl max-xl:text-2xl"></i>
             </h3>
-            <p class="text-center">Average Rating</p>
+            <p class="text-center opacity-80">Average Rating</p>
           </div>
-          <div class="border">
+          <div class="max-lg:col-span-1 max-lg:row-span-1">
             <h3
               class="text-5xl max-xl:text-4xl font-black text-green-600 pb-5 text-center"
             >
               50+
             </h3>
-            <p class="text-center">Industry Experts</p>
+            <p class="text-center opacity-80">Industry Experts</p>
           </div>
         </div>
       </section>
 
       <!-- FEATURES SECTION -->
       <section
-        class="bg-[#230E3D] w-full py-[120px] px-[200px] max-xl:px-[100px]"
+        class="bg-[#230E3D] w-full py-[120px] max-lg:py-16 max-md:py-10 px-[200px] max-xl:px-[100px] max-lg:px-5 max-sm:flex max-sm:flex-col max-sm:justify-evenly max-sm:items-center"
       >
-        <h2 class="text-center font-bold text-5xl mb-10">Why Chose TechWave</h2>
+        <h2 class="text-center font-bold text-5xl max-sm:text-3xl mb-10">
+          Why Chose TechWave
+        </h2>
 
         <div
-          class="grid-cols-3 grid-rows-3 max-lg:grid-cols-2 max-lg:grid-rows-2 grid gap-[30px] max-xl:gap-5"
+          class="grid-cols-3 grid-rows-3 max-lg:grid-cols-2 max-lg:grid-rows-2 grid gap-[30px] max-xl:gap-5 max-sm:flex max-sm:flex-col max-sm:justify-evenly max-sm:items-center max-sm:max-w-[400px]"
         >
           <div
             class="row-span-2 col-span-1 max-lg:row-span-1 max-lg:col-span-2 px-10 py-5 max-xl:px-6 max-xl:py-2.5 rounded-[40px] bg-[#35116562] flex items-start justify-center gap-2.5 flex-col"
@@ -181,7 +208,7 @@
               srcset=""
             />
             <h4 class="text-2xl font-bold">Premium Audio Quality</h4>
-            <p class="text-base leading-6">
+            <p class="text-base leading-6 opacity-60">
               Experience crystal-clear sound with professional-grade recording
               equipment and expert audio engineering. Every episode is mastered
               for optimal listening across all devices and platforms.
@@ -197,7 +224,7 @@
               srcset=""
             />
             <h4 class="text-2xl font-bold">Mobile Friendly</h4>
-            <p class="text-base leading-6">
+            <p class="text-base leading-6 opacity-60">
               Listen on the go with seamless mobile experience and offline
               downloads.
             </p>
@@ -212,7 +239,7 @@
               srcset=""
             />
             <h4 class="text-2xl font-bold">Global Community</h4>
-            <p class="text-base leading-6">
+            <p class="text-base leading-6 opacity-60">
               Connect with tech enthusiasts from over 120 countries worldwide.
             </p>
           </div>
@@ -226,7 +253,7 @@
               srcset=""
             />
             <h4 class="text-2xl font-bold">Exclusive Interviews</h4>
-            <p class="text-base leading-6">
+            <p class="text-base leading-6 opacity-60">
               Get unprecedented access to industry titans, startup founders, and
               tech visionaries. Our host secures exclusive conversations you
               won't find anywhere else, diving deep into their journeys,
@@ -243,7 +270,7 @@
               srcset=""
             />
             <h4 class="text-2xl font-bold">Rich Resources</h4>
-            <p class="text-base leading-6">
+            <p class="text-base leading-6 opacity-60">
               Access show notes, transcripts, and additional learning materials
               for every episode.
             </p>
@@ -252,12 +279,16 @@
       </section>
 
       <!-- EPISODES SECTION -->
-      <section class="w-full py-[120px] px-[200px] max-xl:px-[100px]">
-        <h2 class="font-bold text-5xl text-center capitalize mb-10">
+      <section
+        class="w-full py-[120px] px-[200px] max-lg:py-16 max-md:py-10 max-xl:px-[100px] max-sm:px-5"
+      >
+        <h2
+          class="font-bold text-5xl text-center capitalize mb-10 max-sm:text-3xl"
+        >
           Featured Episodes
         </h2>
         <div
-          class="flex items-center justify-between gap-6 max-lg:flex-col max-lg:px-10"
+          class="flex items-center justify-between gap-6 max-lg:flex-col max-lg:px-10 max-sm:max-w-[400px] max-sm:px-0 max-sm:mx-auto"
         >
           <div class="bg-[#35116562] rounded-2xl">
             <iframe
@@ -282,7 +313,7 @@
               <h3 class="text-2xl font-bold">
                 The Future of AI in Everyday Life
               </h3>
-              <p>
+              <p class="opacity-60">
                 Exploring how artificial intelligence is transforming our daily
                 routines and what to expect in the next decade.
               </p>
@@ -315,7 +346,7 @@
               <h3 class="text-2xl font-bold">
                 Building Better Habits for Remote Work
               </h3>
-              <p>
+              <p class="opacity-60">
                 Practical strategies for staying productive and maintaining
                 work-life balance in a remote environment.
               </p>
@@ -351,7 +382,7 @@
               <h3 class="text-2xl font-bold">
                 Career Growth in Tech: A Roadmap
               </h3>
-              <p>
+              <p class="opacity-60">
                 Expert advice on navigating your tech career from junior
                 developer to senior leadership roles.
               </p>
@@ -365,12 +396,16 @@
       </section>
 
       <!-- HOST SECTION -->
-      <section class="w-full pb-[120px] px-[200px] max-xl:px-[100px] pt-0">
-        <h2 class="font-bold text-5xl text-center capitalize mb-10">
+      <section
+        class="w-full py-[120px] px-[200px] max-lg:py-16 max-md:py-10 max-xl:px-[100px] max-sm:px-5 max-md:mx-auto"
+      >
+        <h2
+          class="font-bold text-5xl text-center capitalize mb-10 max-sm:text-3xl"
+        >
           meet the host
         </h2>
         <div
-          class="bg-[#35116562] p-10 rounded-[40px] flex items-center justify-between gap-6"
+          class="bg-[#35116562] p-10 rounded-[40px] flex items-center justify-between gap-6 max-md:flex-col max-md:px-10 max-md:max-w-[400px] max-sm:px-0 max-md:mx-auto"
         >
           <img
             src="./assets//host.png"
@@ -378,9 +413,15 @@
             srcset=""
             class="max-w-52 border-2 border-white rounded-full"
           />
-          <div class="flex flex-col items-start justify-between gap-4">
-            <h3 class="text-3xl font-bold capitalize text-left">alex kumer</h3>
-            <p class="leading-6">
+          <div
+            class="flex flex-col items-start max-md:items-center justify-between gap-4"
+          >
+            <h3
+              class="text-3xl max-sm:text-2xl font-bold capitalize text-left max-md:text-center"
+            >
+              alex kumer
+            </h3>
+            <p class="leading-6 max-md:text-center opacity-60">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
               has been in the tech industry for over 10 years, working with
               startups and Fortune 500 companies. Through TechWave, Alex shares
@@ -420,10 +461,9 @@
         </div>
       </section>
     </main>
-
     <!-- FOOTER SECTION -->
     <footer
-      class="bg-[url(./assets/footer-bg.png)] flex items-center gap-8 justify-around flex-col py-[120px]"
+      class="bg-[url(./assets/footer-bg.png)] bg-center bg-cover bg-no-repeat flex items-center gap-8 justify-around flex-col py-[120px] max-md:py-10 max-md:px-5"
     >
       <h1 class="font-bold text-6xl text-center">
         Tech<span
@@ -431,13 +471,29 @@
           >Wave</span
         >
       </h1>
-      <div class="flex items-center justify-around gap-10 max-w-fit">
-        <div><i class="fa-brands fa-spotify"></i> Spotify</div>
-        <div><i class="fa-solid fa-podcast"></i> Apple Podcast</div>
-        <div><i class="fa-brands fa-youtube"></i> YouTube</div>
-        <div><i class="fa-brands fa-x-twitter"></i> Twitter</div>
+      <div
+        class="flex items-center justify-around gap-10 max-sm:gap-5 max-sm:flex-wrap max-sm:max-w-80 max-w-fit"
+      >
+        <div class="flex items-center justify-around gap-3">
+          <div class="opacity-50">
+            <i class="fa-brands fa-spotify opacity-100"></i> Spotify
+          </div>
+          <div class="opacity-50">
+            <i class="fa-solid fa-podcast opacity-100"></i> Apple Podcast
+          </div>
+        </div>
+        <div class="flex items-center justify-around gap-3">
+          <div class="opacity-50">
+            <i class="fa-brands fa-youtube opacity-100"></i> YouTube
+          </div>
+          <div class="opacity-50">
+            <i class="fa-brands fa-x-twitter opacity-100"></i> Twitter
+          </div>
+        </div>
       </div>
-      <p>&copy; 2026 TechWave Podcast. All rights reserved.</p>
+      <p class="text-center opacity-50">
+        &copy; 2026 TechWave Podcast. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
